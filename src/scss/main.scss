@@ -1,0 +1,22 @@
+//Variables
+$ff: Calibri; //main font
+$fz: 15px; //font size
+$c: #fff; //font color
+
+//********************************************************************************
+//Extend variables
+%flex-block {
+  display: flex;
+  align-items: center;
+}
+//********************************************************************************
+//Main styles
+.bg-green{
+  background-color: #8cd0008f;
+}
+
+//Import files
+@import "_style-start.scss";
+@import "_head.scss";
+@import "_phone--form.scss";
+@import "_media.scss";

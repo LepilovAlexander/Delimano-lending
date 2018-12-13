@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1200px) {
+  .headform--container {
+    .crane {
+      padding-left: 0;
+    }
+  }
+
+}
+@media only screen and (max-width: 992px) {
+  .headform--container .headform--container--form .phoneForm {
+    width: 100%;
+    .phoneForm--in {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .headform--container .hit {
+    right: 230px;
+  }
+  div.timer div.timer--Cont.timer--Cont_end {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .green-block {
+
+    min-height: 130px;
+
+
+  }
+  .headform--container .hit {
+    right: 150px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .header-container {
+    background-size: cover;
+  }
+  .headform--container{
+    .hit {
+      right: 100px;
+    }
+    .crane {
+      justify-content: center;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 369px) {
+  .green-block {
+
+    min-height: 200px;
+
+
+  }
+}

@@ -1,0 +1,62 @@
+.phoneForm {
+  @extend %flex-block;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255,255,255,0.8);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-width: 60%;
+  border-radius: 7px;
+  .phoneForm--in {
+    @extend %flex-block;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .phoneForm--btn {
+    background: rgb(169,3,41); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(216,25,33,1) 44%, rgba(114,13,28,1) 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(216,25,33,1) 44%,rgba(114,13,28,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(216,25,33,1) 44%,rgba(114,13,28,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#720d1c',GradientType=0 ); /* IE6-9 */
+    border-radius: 8px;
+    color: $c;
+    padding: 0.2rem 2.2rem;
+    font-size: $fz*1.6;
+    box-shadow: 1px 1px 5px #000;
+    transition: .7s;
+    &:hover {
+      transition: .7s;
+      transform: scale(1.050);
+    }
+  }
+  .phoneForm--text {
+    font-size: $fz*1.8;
+  }
+  .phoneForm--name,
+  .phoneForm--phone {
+    border: 1px solid #d0d2d3;
+    color: #000;
+    display: block;
+    font-size: 18px;
+    width: 90%;
+    height: 2.2rem;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0px 5px 0px 30px;
+  }
+  .phoneForm--name{
+
+    background: url('../img/input.png') no-repeat 0 -25px,linear-gradient(0deg,rgba(255,255,255,1) 88.95%,rgba(207,209,210,1) 100%);
+  }
+  .phoneForm--phone {
+    background: url('../img/input.png') no-repeat 0 -55px,linear-gradient(0deg,rgba(255,255,255,1) 88.95%,rgba(207,209,210,1) 100%);
+  }
+  .thank {
+    display: none;
+    color: #34ce57;
+  }
+
+}
+

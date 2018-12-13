@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/sale.ico" type="image/x-icon">
+    <title>Delimano</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-green">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="img/Delimano-delimano.png" width="170" height="50" class="d-inline-block align-top" alt="">
+
+            </a>
+            <span class="ml-md-5 mr-md-5 navbar-text text-white">+(380) 938 150 845</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-center text-white">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Как заказать</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="green-block"></div>
+    <div class="header-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="h2 text-white pl-3 pr-3 text-center">Проточный водонагреватель - горачая вода за 3 секунды!</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="headform--container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="headform--container--flag">
+                    <p class="headform--container--flag--text">Стильно, быстро, экономично – 1 час работы крана – всего
+                        2,52 грн</p>
+                </div>
+                <div class="headform--container--form">
+                    <div class="phoneForm">
+                        <p class="phoneForm--text text-center">Закажите прямо сейчас</p>
+                        <form action="sendmail.php" data-show=".thank" data-them="Delimano лендинг, форма с именем и номером тел.">
+                            <div class="phoneForm--in"><input type="text" name="name" value="" placeholder="Ваше имя"
+                                                              class="phoneForm--name required" required="" data-name="Имя: "></div>
+                            <div class="phoneForm--in"><input type="text" name="phone" value=""
+                                                              placeholder="Ваш телефон" class="phoneForm--phone required"
+                                                              required="" data-name="Номер телефона: "></div>
+                            <div class="phoneForm--in">
+                                <button class="btn phoneForm--btn" value="Submit">Оставить заявку</button>
+                            </div>
+                        </form>
+                        <div class="thank" style="display: none">Ваша заявка отправлена!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="hit">
+                    <img src="img/hit.png">
+                </div>
+                <div class="crane">
+                    <img src="img/kran_hot.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 timer--Cont timer--Cont_end"><p>Успейте заказать<br>по специальной цене!</p></div>
+                <div class="col-lg-4 col-md-6 col-sm-12 timer--Cont timer--Cont_end"><p>До конца акции осталось:</p></div>
+                <div class="col-lg-5 col-md-12 timer--Cont"> <script src="js/timer.js"></script></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.sendFormLP.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+</body>
+</html>
