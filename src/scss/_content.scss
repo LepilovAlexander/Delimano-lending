@@ -1,5 +1,5 @@
 .section {
-  .section--h3 {
+  .section--h3Or {
     font-family: $os;
     font-weight: 800;
     width: 100%;
@@ -8,6 +8,8 @@
     position: relative;
     text-decoration: none;
     line-height: 1;
+    white-space: wrap;
+    overflow-wrap: break-word;
     &:after {
       content: '';
       position: absolute;
@@ -21,7 +23,10 @@
     }
   }
 }
+
 .aboutCranDelimo {
+
+  position: relative;
   .aboutCranDelimo--head {
     @extend %flex-block;
     .aboutCranDelimo--head--h4 {
@@ -80,9 +85,9 @@
 
     }
   }
-   .rightLine--o {
-     border-right: 1px solid rgb(241, 101, 34);
-   }
+  .rightLine--o {
+    border-right: 1px solid rgb(241, 101, 34);
+  }
   .aboutCranDelimo--photo {
     @extend %flex-block;
     justify-content: center;
@@ -105,6 +110,116 @@
       text-align: center;
     }
 
-
   }
+  &:after {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    height: 120px;
+    width: 100%;
+    transform: rotate(2.3deg);
+    bottom: -136px;
+    background: #fff;
+    left: 7px;
+  }
+}
+
+.catalog {
+  .catalog--h3 {
+    padding: 0.5rem 3rem;
+    background-color: #fff;
+    border: 2px solid #93d095;
+    margin-top: 12rem;
+    border-radius: 100px;
+    font-size: $fz*3.2;
+    font-family: $os;
+    font-weight: 700;
+  }
+  .catalog--productContainer {
+    background-color: #fff;
+    border: 2px solid #93d095;
+    border-radius: 50px;
+    font-family: $os;
+    font-weight: 700;
+    font-size: $fz*1.5;
+    .catalog--productContainer--h5 {
+      font-size: $fz*2.6;
+      font-weight: 700;
+    }
+    .catalog--productContainer--p {
+      font-size: $fz*2;
+
+    }
+    .catalog--productContainer--ul {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        top: 1rem;
+        left: 26rem;
+        width: 50%;
+        height: 50%;
+        z-index: 10;
+
+      }
+    }
+    .catalog--productContainer--block {
+      @extend %flex-block;
+      justify-content: center;
+      width: 80%;
+      .catalog--productContainer--block--craneImg {
+        width: 100%;
+        padding-top: 3rem;
+      }
+    }
+    .catalog--productContainer--costBlock {
+      display: flex;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      padding-top: 3rem;
+      width: 50%;
+      .catalog--productContainer--costBlock--left {
+        .catalog--productContainer--costBlock--left--p {
+          font-size: $fz*1.8;
+          margin-bottom: 0;
+          s {
+            font-size: $fz*2;
+          }
+        }
+        .catalog--productContainer--costBlock--left--p__red {
+          font-size: $fz*2.3;
+          color: #FF0000;
+          text-align: right;
+          padding-right: 2.5rem;
+        }
+      }
+      .catalog--productContainer--costBlock--right {
+        padding-left: 2rem;
+        .catalog--productContainer--costBlock--right--btn {
+          background: rgb(226, 84, 64);
+          border-right: 5px;
+          border-style: solid;
+          border-top-width: 1px;
+          border-bottom-width: 3px;
+          border-left-width: 1px;
+          border-right-width: 1px;
+          border-color: rgb(202, 51, 30);
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 12px;
+          padding-right: 12px;
+          font-size: 20px;
+          color: rgb(255, 255, 255);
+          font-family: "Open Sans";
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+      }
+    }
+  }
+}
+
+
 }

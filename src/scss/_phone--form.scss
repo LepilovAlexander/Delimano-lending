@@ -58,5 +58,13 @@
     color: #34ce57;
   }
 
-}
 
+}
+.modal--imgBlock {
+  display: flex;
+  justify-content: center;
+  .modal--img {
+    width: 40%;
+    height: 40%;
+  }
+}

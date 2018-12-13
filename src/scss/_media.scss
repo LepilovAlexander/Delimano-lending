@@ -6,7 +6,11 @@
   }
 
 }
+
 @media only screen and (max-width: 992px) {
+  header nav.bg-green {
+    background-color: #8cd000;
+  }
   .headform--container .headform--container--form .phoneForm {
     width: 100%;
     .phoneForm--in {
@@ -15,6 +19,7 @@
         width: 100%;
       }
     }
+
   }
   .headform--container .hit {
     right: 230px;
@@ -22,6 +27,23 @@
   div.timer div.timer--Cont.timer--Cont_end {
     justify-content: center;
   }
+  .section {
+    .section--h3Or {
+      &:after {
+        content: '';
+        display: none;
+      }
+    }
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--ul:after {
+    background-size:50%;
+    top:28rem;
+    left:20rem;
+    width:40%;
+    height:50%;
+    z-index:10;
+  }
+
 }
 
 @media only screen and (max-width: 555px) {
@@ -29,17 +51,42 @@
 
     min-height: 130px;
 
-
   }
   .headform--container .hit {
     right: 150px;
   }
+  .catalog .catalog--productContainer .catalog--productContainer--ul:after {
+    left:10rem;
+  }
+
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock {
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: pre-wrap;
+    .catalog--productContainer--costBlock--right--btn {
+      margin-bottom: 2rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right {
+    margin-left: 0;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock {
+    white-space: pre-wrap;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--left .catalog--productContainer--costBlock--left--p__red,
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right .catalog--productContainer--costBlock--right--btn
+  {
+    margin-top: -11rem;
+  }
 }
+
 @media only screen and (max-width: 424px) {
   .header-container {
     background-size: cover;
   }
-  .headform--container{
+  .headform--container {
     .hit {
       right: 100px;
     }
@@ -47,6 +94,16 @@
       justify-content: center;
     }
   }
+  .catalog .catalog--productContainer .catalog--productContainer--ul:after {
+    top: 56rem;
+    background-size: 80%;
+  }
+  .section {
+    .section--h3Or {
+      font-size: $fz*2;
+    }
+  }
+
 
 }
 
@@ -54,7 +111,6 @@
   .green-block {
 
     min-height: 200px;
-
 
   }
 }

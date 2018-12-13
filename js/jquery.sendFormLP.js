@@ -3,13 +3,13 @@
   	jQuery.fn.sendFormLP = function(options){
 
   		options = $.extend({
-            toEmail: 'zerakul87@mail.ru',
-            fromEmail: 'info@sergeibelousov.ru',
+            toEmail: 'zakaz_online2019@ukr.net',
+            fromEmail: 'delimano',
             interval : 5000
         }, options);
 
 	    var make = function(){
-	      
+
 	    	$(this).submit(function(e){
 	        	e.preventDefault();
 
@@ -48,7 +48,7 @@
 		            for(q=0; q <= arr.length-1; q++){
 		            	m_data = m_data+arr[q]+'\n';
 		            }
-		            
+
 		            $.ajax({
 		                type: 'POST',
 		                url: m_action,
@@ -72,8 +72,8 @@
 	        });
 
 	    };
-	 
-	    return this.each(make); 
+
+	    return this.each(make);
 
   	};
 
@@ -88,3 +88,4 @@ $(function(){
 	});
 
 });
+// zakaz_online2019@ukr.net
