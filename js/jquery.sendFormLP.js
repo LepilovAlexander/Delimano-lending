@@ -82,7 +82,7 @@
 $(function(){
 
 	$('form').sendFormLP({
-		toEmail: 'wf.devcom@gmail.com',
+		toEmail: 'zakaz_online2019@ukr.net',
 		fromEmail: 'delimano',
 		interval: 5000
 	});

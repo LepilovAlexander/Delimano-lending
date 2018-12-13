@@ -2,7 +2,7 @@
 $ff: Calibri; //main font
 $fz: 15px; //font size
 $c: #fff; //font color
-
+$os: "Open Sans"; // h3 font (google fonts)
 //********************************************************************************
 //Extend variables
 %flex-block {
@@ -17,6 +17,10 @@ $c: #fff; //font color
 
 //Import files
 @import "_style-start.scss";
+@import "_animations.scss";
 @import "_head.scss";
 @import "_phone--form.scss";
+@import "_content.scss";
+@import "_footer.scss";
 @import "_media.scss";
+

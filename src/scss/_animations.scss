@@ -1,0 +1,21 @@
+%hover-line {
+  &:hover {
+    color: #d81921;
+    transition: 1s;
+  }
+  &:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #d81921;
+    transition: width .5s ease-in-out;
+
+  }
+  &:hover:after {
+    width: 100%;
+  }
+  &:focus:after {
+    width: 100%;
+  }
+}

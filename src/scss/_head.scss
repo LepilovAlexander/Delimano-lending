@@ -10,25 +10,7 @@ ul.navbar-nav li.nav-item a.nav-link {
   transition: 1s;
   font-size: $fz*1.4;
   white-space: nowrap;
-  &:hover {
-    color: #d81921;
-    transition: 1s;
-  }
-  &:after {
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: #d81921;
-    transition: width .5s ease-in-out;
-
-  }
-  &:hover:after {
-    width: 100%;
-  }
-  &:focus:after {
-    width: 100%;
-  }
+  @extend %hover-line;
 
 }
 nav.navbar span {
