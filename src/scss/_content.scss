@@ -135,6 +135,10 @@
     font-family: $os;
     font-weight: 700;
   }
+  .catalog--h3__super {
+    margin-top: 2rem;
+    color: rgb(238, 29, 36);
+  }
   .catalog--productContainer {
     background-color: #fff;
     border: 2px solid #93d095;
@@ -146,10 +150,14 @@
       font-size: $fz*2.6;
       font-weight: 700;
     }
+    .catalog--productContainer--h5__forKey {
+      font-size: $fz*2;
+    }
     .catalog--productContainer--p {
       font-size: $fz*2;
 
     }
+
     .catalog--productContainer--ul {
       position: relative;
       &:after {
@@ -166,6 +174,12 @@
 
       }
     }
+    ul.catalog--productContainer--ul.g__left {
+      &:after {
+        left: -9rem;
+      }
+
+    }
     .catalog--productContainer--block {
       @extend %flex-block;
       justify-content: center;
@@ -173,6 +187,13 @@
       .catalog--productContainer--block--craneImg {
         width: 100%;
         padding-top: 3rem;
+      }
+    }
+    .catalog--productContainer--block__forKey {
+      width: 100%;
+      padding-left: 1.5rem;
+      .catalog--productContainer--block--craneImg {
+        padding-top: 0.5rem;
       }
     }
     .catalog--productContainer--costBlock {
@@ -196,6 +217,7 @@
           padding-right: 2.5rem;
         }
       }
+
       .catalog--productContainer--costBlock--right {
         padding-left: 2rem;
         .catalog--productContainer--costBlock--right--btn {
@@ -216,10 +238,55 @@
           font-family: "Open Sans";
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 
+        }
       }
     }
-  }
-}
+    .catalog--productContainer--costBlock__forKey {
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-top: 0;
+      justify-content: flex-end;
+      width: 100%;
+      padding-top: 1rem;
+      .qualityB {
+        display: flex;
+        justify-content: flex-end;
+        .quality {
+          width: 30%;
+          height: 30%;
+        }
+      }
 
+      .catalog--productContainer--costBlock--left {
+        justify-content: flex-end;
+        margin-right: 1rem;
+        .catalog--productContainer--costBlock--left--p__red__forKey {
+          text-align: right;
+          padding-right: 0;
+        }
+      }
+      .catalog--productContainer--costBlock--left--p__forKey {
+        text-align: right;
+      }
+
+      .catalog--productContainer--costBlock--right__forKey {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+      }
+
+    }
+  }
+  .key--p {
+    font-weight: 500;
+    font-size: $fz*1.3;
+    padding: 1rem 4rem 1.5rem 4rem;
+
+  }
+  .orLine {
+    background-color: #ea8e1b;
+    width: 60%;
+    height: 3.5px;
+  }
 
 }

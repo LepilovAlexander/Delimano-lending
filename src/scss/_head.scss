@@ -79,7 +79,6 @@ nav.navbar span {
     position: relative;
     z-index: 3;
     top: -100px;
-    padding-left: 5rem;
   }
 
   }
@@ -107,3 +106,74 @@ nav.navbar span {
 
   }
 
+.prise {
+  display: flex;
+  justify-content: space-between;
+  //flex-wrap: nowrap;
+  position: absolute;
+  top: 31rem;
+  right: 11rem;
+  z-index: 11;
+  width: 70%;
+  min-height: 110px;
+  .prise--p {
+    position: relative;
+    display: flex;
+    width: 30%;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: $fz*3;
+    padding-top: 3rem;
+    margin-bottom: 0;
+    color: #333;
+    padding-right: 0.8rem;
+    &:before {
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 92px;
+      height: 4px;
+      background: red;
+      top: 82px;
+    }
+    &:after {
+      content: 'грн';
+      position: absolute;
+      color: #333;
+      font-size: $fz*1.4;
+      transform: rotate(-90deg);
+      top: 4.3rem;
+      right: -1rem;
+      font-family: $os;
+      font-weight: bold;
+    }
+  }
+  .prise--img {
+    position: relative;
+    width: 66%;
+
+  }
+  &:before {
+    content: '639';
+    display: block;
+    position: absolute;
+    font-family: $os;
+    font-size: $fz*4.5;
+    color: $c;
+    z-index: 15;
+    right: 8.5rem;
+
+  }
+  &:after {
+    content: 'грн';
+    position: absolute;
+    color: #fff;
+    font-size: $fz*2.2;
+    transform: rotate(-90deg);
+    top: 1.7rem;
+    right: 5.8rem;
+    font-family: $os;
+
+  }
+}
