@@ -22,6 +22,13 @@
 
     }
   }
+  .section--h3Or__wl {
+    font-size: $fz*3;
+    &:after {
+      content: '';
+      display: none;
+    }
+  }
 }
 
 .aboutCranDelimo {
@@ -118,9 +125,9 @@
     height: 120px;
     width: 100%;
     transform: rotate(2.3deg);
-    bottom: -136px;
+    bottom: -75px;
     background: #fff;
-    left: 7px;
+    left: 6px;
   }
 }
 
@@ -234,6 +241,7 @@
           padding-left: 12px;
           padding-right: 12px;
           font-size: 20px;
+          max-height: 3rem;
           color: rgb(255, 255, 255);
           font-family: "Open Sans";
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -273,6 +281,26 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 1rem;
+        .catalog--productContainer--costBlock--right--btn__forKey {
+          background: rgb(226, 84, 64);
+          border-right: 5px;
+          border-style: solid;
+          border-top-width: 1px;
+          border-bottom-width: 3px;
+          border-left-width: 1px;
+          border-right-width: 1px;
+          border-color: rgb(202, 51, 30);
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 12px;
+          padding-right: 12px;
+          font-size: 20px;
+          max-height: 3rem;
+          color: rgb(255, 255, 255);
+          font-family: "Open Sans";
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+          margin-top: 1rem;
+        }
       }
 
     }
@@ -283,10 +311,317 @@
     padding: 1rem 4rem 1.5rem 4rem;
 
   }
-  .orLine {
-    background-color: #ea8e1b;
-    width: 60%;
-    height: 3.5px;
+
+}
+
+.advantages {
+
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  .orLineBlock {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0.5rem;
+    .orLine {
+      background-color: #ea8e1b;
+      width: 60%;
+      height: 3.5px;
+    }
+  }
+  .advantages--h6 {
+    font-size: $fz*2;
+    font-weight: 700;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #333;
+  }
+  .advantages--p {
+    font-family: $os;
+    font-size: $fz*1.2;
+    font-weight: 700;
+    text-align: right;
+    line-height: 1;
+  }
+}
+
+.advantages__left {
+  .orLineBlock {
+    justify-content: flex-end;
+  }
+  .advantages--h6 {
+    text-align: right;
+  }
+  .advantages--p {
+    text-align: right;
+  }
+}
+
+.advantages__right {
+  .orLineBlock {
+    justify-content: flex-start;
+  }
+  .advantages--h6 {
+    text-align: left;
+  }
+  .advantages--p {
+    text-align: left;
+  }
+}
+
+.imgBlock {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .advantages--img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.denger-text {
+  font-size: $fz*2;
+  color: #ee1d24;
+  font-weight: 700;
+}
+
+.videoLine {
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: #8cd000;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .videoLine--pBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 4rem;
+    .videoLine--p {
+
+      display: block;
+      font-size: $fz*2.5;
+      color: $c;
+      font-weight: 500;
+      text-align: left;
+    }
   }
 
+  .videoLine--imgBlock {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    min-height: 18rem;
+    justify-content: center;
+  }
+  .videoLine--monitor {
+    display: flex;
+    justify-content: center;
+    z-index: 15;
+    background-image: url('../img/monitor.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 16rem;
+  }
+  iframe#player {
+    margin: 13px 2px;
+    width: 95%;
+    height: 190px;
+  }
+
+}
+
+.testimonials {
+  background-image: url(../img/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .testimonials--h3 {
+    padding: 0.5rem 3rem;
+    background-color: #fff;
+    border-radius: 100px;
+    font-size: $fz*3.2;
+    font-family: $os;
+    text-align: center;
+    font-weight: 100;
+  }
+  .testimonials--testimonialContainer {
+    background-color: #fff;
+    border: 2px solid #93d095;
+    border-radius: 50px;
+    font-family: $os;
+    font-weight: 700;
+    font-size: $fz*1.5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testimonial--imgBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .testimonials--testimonial--img {
+      display: block;
+      width: 120px;
+      height: 120px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+  }
+
+  .testimonial--p {
+    display: block;
+    font-family: $ff;
+    font-size: $fz*1.3;
+    font-weight: 100;
+    padding: 1rem;
+  }
+  .testimonial--p__l {
+    text-align: right;
+  }
+  .testimonial--p__r {
+    text-align: left;
+  }
+  .testimonial--name {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+  .testimonial--pContainer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.section--h3Black {
+  font-family: $ff;
+  font-weight: 800;
+  width: 100%;
+  font-size: $fz*3;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  line-height: 1;
+  white-space: wrap;
+  overflow-wrap: break-word;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 40%;
+    height: 3.5px;
+    right: 30rem;
+    left: 30rem;
+    bottom: -0.8rem;
+  }
+}
+.rightLine__b {
+  border-right: 3px solid #666666;
+}
+.advantages--h6__us {
+  font-size: $fz*1.5;
+  margin-bottom: 0.3rem;
+}
+.advantages--p__us {
+  margin-bottom: 0.3rem;
+  font-size: $fz*1.2;
+}
+.whyus--imgBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .whyus--img {
+    width: 100%;
+
+  }
+}
+.advantages--h6__us__left,
+.advantages--p__us__left {
+  text-align: right;
+}
+.main-6-container {
+  margin: auto;
+}
+
+.main-6-container p {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 60px
+}
+
+.faq {
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 20px;
+  margin-left: 20px
+}
+
+.faq-red {
+  padding: 10px;
+  min-height: 40px;
+  color: #CF2119;
+  text-transform: uppercase;
+  border: 1px solid #CF2119;
+  border-radius: 5px;
+  position: relative
+}
+
+.faq-black {
+  padding: 10px 10px 30px 10px
+}
+
+.pipa-right,
+.pipa-left {
+  position: absolute;
+  right: -12px;
+  bottom: 10px;
+  width: 12px;
+  height: 20px;
+  background: url(../img/pipa_right.png) center center no-repeat
+}
+
+.pipa-left {
+  left: -12px;
+  background: url(../img/pipa_left.png) center center no-repeat
+}
+.wus {
+  position: relative;
+  z-index: 6;
+  .warning {
+    padding-bottom: 5rem;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    height: 120px;
+    width: 100%;
+    transform: rotate(2.3deg);
+    bottom: -75px;
+    background: #fff;
+    left: 6px;
+    z-index: 2;
+  }
+}
+
+.hww--h3 {
+  padding: 0.5rem 3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 100px;
+  font-size: $fz*3.2;
+  font-family: $os;
+  text-align: center;
+  font-weight: 100;
 }

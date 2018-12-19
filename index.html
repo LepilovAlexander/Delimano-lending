@@ -30,16 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-center text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Описание</a>
+                        <a class="nav-link" href="#about">Описание</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Каталог</a>
+                        <a class="nav-link" href="#catalog">Каталог</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Преимущества</a>
+                        <a class="nav-link" href="#advantages">Преимущества</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Отзывы</a>
+                        <a class="nav-link" href="#testimonials">Отзывы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Как заказать</a>
@@ -57,72 +57,74 @@
             </div>
         </div>
     </div>
-</header>
-<div class="headform--container">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <div class="headform--container--flag">
-                    <p class="headform--container--flag--text">Стильно, быстро, экономично – 1 час работы крана – всего
-                        2,52 грн</p>
+    <div class="headform--container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="headform--container--flag">
+                        <p class="headform--container--flag--text">Стильно, быстро, экономично – 1 час работы крана –
+                            всего
+                            2,52 грн</p>
+                    </div>
+                    <div class="headform--container--form">
+                        <div class="phoneForm">
+                            <p class="phoneForm--text text-center">Закажите прямо сейчас</p>
+                            <form action="sendmail.php" data-show=".thank" data-them="Краны Delimano">
+                                <div class="phoneForm--in"><input type="text" name="name" value=""
+                                                                  placeholder="Ваше имя"
+                                                                  class="phoneForm--name " class="phoneForm--name "
+                                                                  data-name="Имя: " required></div>
+                                <div class="phoneForm--in"><input type="text" name="phone" value=""
+                                                                  placeholder="Ваш телефон"
+                                                                  class="phoneForm--phone "
+                                                                  data-name="Номер телефона: " required></div>
+                                <div class="phoneForm--in">
+                                    <button class="btn phoneForm--btn" value="Submit">Оставить заявку</button>
+                                </div>
+                            </form>
+                            <div class="thank" style="display: none">Ваша заявка отправлена!</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="headform--container--form">
-                    <div class="phoneForm">
-                        <p class="phoneForm--text text-center">Закажите прямо сейчас</p>
-                        <form action="sendmail.php" data-show=".thank" data-them="Краны Delimano">
-                            <div class="phoneForm--in"><input type="text" name="name" value="" placeholder="Ваше имя"
-                                                              class="phoneForm--name " class="phoneForm--name "
-                                                              data-name="Имя: " required></div>
-                            <div class="phoneForm--in"><input type="text" name="phone" value=""
-                                                              placeholder="Ваш телефон"
-                                                              class="phoneForm--phone "
-                                                              data-name="Номер телефона: " required></div>
-                            <div class="phoneForm--in">
-                                <button class="btn phoneForm--btn" value="Submit">Оставить заявку</button>
-                            </div>
-                        </form>
-                        <div class="thank" style="display: none">Ваша заявка отправлена!</div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="hit">
+                        <img src="img/hit.png">
+                    </div>
+                    <div class="crane">
+                        <img src="img/kran_hot.png">
+                    </div>
+                    <div class="prise">
+                        <p class="prise--p"><span>1390</span></p>
+                        <img class="prise--img" src="img/Price_list.png">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="hit">
-                    <img src="img/hit.png">
-                </div>
-                <div class="crane">
-                    <img src="img/kran_hot.png">
-                </div>
-                <div class="prise">
-                    <p class="prise--p"><span>1390</span></p>
-                    <img class="prise--img" src="img/Price_list.png">
+        </div>
+        <div class="timer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 timer--Cont timer--Cont_end"><p>Успейте заказать<br>по
+                        специальной цене!</p></div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 timer--Cont timer--Cont_end"><p>До конца акции осталось:</p>
+                    </div>
+                    <div class="col-lg-5 col-md-12 timer--Cont">
+                        <script src="js/timer.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="timer">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-12 timer--Cont timer--Cont_end"><p>Успейте заказать<br>по
-                    специальной цене!</p></div>
-                <div class="col-lg-4 col-md-6 col-sm-12 timer--Cont timer--Cont_end"><p>До конца акции осталось:</p>
-                </div>
-                <div class="col-lg-5 col-md-12 timer--Cont">
-                    <script src="js/timer.js"></script>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
-</div>
+    </div>
+</header>
 <main>
-    <section class="section">
-        <h3 class="section--h3Or text-center pt-5">ПОДРОБНЕЕ О КРАНЕ-ВОДОНАГРЕВАТЕЛЕ
+    <section class="section" id="about">
+        <h3 class="section--h3Or text-center pt-5 wow zoomIn" data-wow-duration="2s">ПОДРОБНЕЕ О КРАНЕ-ВОДОНАГРЕВАТЕЛЕ
             ДЕЛИМАНО</h3>
         <div class="aboutCranDelimo pb-5 mb-5">
             <div class="container pt-5 pb-5">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 rightLine pt-5">
+                    <div class="col-lg-6 col-md-12 rightLine pt-5 wow bounceInLeft">
                         <div class="aboutCranDelimo--head">
                             <img src="img/winter.png" class="aboutCranDelimo--head--img">
                             <h4 class="aboutCranDelimo--head--h4 aboutCranDelimo--head--h4__winter pl-4">Зимний
@@ -177,10 +179,10 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6 col-md-12 pt-5">
+                    <div class="col-lg-6 col-md-12 pt-5 wow bounceInRight">
                         <div class="aboutCranDelimo--head">
                             <img src="img/summer.png" class="aboutCranDelimo--head--img">
-                            <h4 class="aboutCranDelimo--head--h4 aboutCranDelimo--head--h4__summer pl-4">Зимний
+                            <h4 class="aboutCranDelimo--head--h4 aboutCranDelimo--head--h4__summer pl-4">Летний
                                 период</h4>
                         </div>
                         <div class="aboutCranDelimo--body pt-3 table-responsive">
@@ -283,11 +285,11 @@
 
 
     </section>
-    <section class="section">
-        <div class="parallax-window catalog" data-parallax="scroll" data-image-src="img/best-catalog-bg.jpg">
+    <section class="section" id="catalog">
+        <div class="parallax-window catalog pb-5" data-parallax="scroll" data-image-src="img/best-catalog-bg.jpg">
             <div class="container mt-5">
                 <div class="row justify-content-center">
-                    <h3 class="catalog--h3">КАТАЛОГ ЛУЧШИХ МОДЕЛЕЙ</h3>
+                    <h3 class="catalog--h3 wow zoomIn" data-wow-duration="2s">КАТАЛОГ ЛУЧШИХ МОДЕЛЕЙ</h3>
                 </div>
             </div>
 
@@ -317,9 +319,9 @@
                         <div class="catalog--productContainer--costBlock">
                             <div class="catalog--productContainer--costBlock--left">
                                 <p class="catalog--productContainer--costBlock--left--p">Лови момент
-                                    <s>1060</s></p>
+                                    <s>1060</s> грн</p>
                                 <p class="catalog--productContainer--costBlock--left--p__red ">
-                                    530
+                                    530 грн
                                 </p>
                             </div>
                             <div class="catalog--productContainer--costBlock--right">
@@ -385,9 +387,9 @@
                         <div class="catalog--productContainer--costBlock">
                             <div class="catalog--productContainer--costBlock--left">
                                 <p class="catalog--productContainer--costBlock--left--p">Лови момент
-                                    <s>1390</s></p>
+                                    <s>1390</s> грн</p>
                                 <p class="catalog--productContainer--costBlock--left--p__red">
-                                    639
+                                    639 грн
                                 </p>
                             </div>
                             <div class="catalog--productContainer--costBlock--right">
@@ -490,9 +492,9 @@
                         <div class="catalog--productContainer--costBlock">
                             <div class="catalog--productContainer--costBlock--left">
                                 <p class="catalog--productContainer--costBlock--left--p">Лови момент
-                                    <s>1490</s></p>
+                                    <s>1490</s> грн</p>
                                 <p class="catalog--productContainer--costBlock--left--p__red">
-                                    799
+                                    799 грн
                                 </p>
                             </div>
                             <div class="catalog--productContainer--costBlock--right">
@@ -569,13 +571,14 @@
                                 <div class="qualityB"><img class="quality" src="img/quality.png"></div>
                                 <p class="catalog--productContainer--costBlock--left--p catalog--productContainer--costBlock--left--p__forKey">
                                     Лови момент
-                                    <s>300</s></p>
+                                    <s>300</s> грн</p>
                                 <p class="catalog--productContainer--costBlock--left--p__red catalog--productContainer--costBlock--left--p__red__forKey">
-                                    149
+                                    149 грн
                                 </p>
                             </div>
                             <div class="mt-3 catalog--productContainer--costBlock--right catalog--productContainer--costBlock--right__forKey">
-                                <button class="btn catalog--productContainer--costBlock--right--btn" data-toggle="modal"
+                                <button class="btn catalog--productContainer--costBlock--right--btn__forKey"
+                                        data-toggle="modal"
                                         data-target="#key">
                                     Заказать
                                 </button>
@@ -635,30 +638,415 @@
                         адаптироваться к размерам и форме болтов и гаек, независимо от того, являются они
                         круглыми или шестиугольными.</p>
                 </div>
-                <!--<div class="row justify-content-center">-->
-                    <!--<div class="orLine">-->
-                    <!--</div>-->
-                <!--</div>-->
+
 
             </div>
 
 
         </div>
     </section>
+    <secrion class="section" id="advantages">
+        <h3 class="section--h3Or__wl section--h3Or text-center pt-5 mb-5 wow zoomIn" data-wow-duration="2s">Преимущества водонагревателя DELIMANO</h3>
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="advantages advantages__left wow bounceInLeft">
+                        <h6 class="advantages--h6"><strong>ЭКОНОМИЯ И ВЫГОДА</strong></h6>
+                        <div class="orLineBlock">
+                            <div class="orLine"></div>
+                        </div>
 
+                        <p class="advantages--p">Значительная экономия воды</p>
+                        <p class="advantages--p">Потребление электроэнергии проиходит</p>
+                        <p class="advantages--p">только в режиме &#171;Горячей воды&#187;.</p>
+                        <p class="advantages--p">То, что есть + 1кВт = 1,68грн</p>
+                        <p class="advantages--p">Средняя мощность: 1,5кВт/ч</p>
+                        <p class="advantages--p">1 час работы – 2,52грн</p>
+                    </div>
+                    <div class="advantages advantages__left wow bounceInLeft">
+                        <h6 class="advantages--h6"><strong>БЫСТРО И УДОБНО</strong></h6>
+                        <div class="orLineBlock">
+                            <div class="orLine"></div>
+                        </div>
+
+                        <p class="advantages--p">Для установки не требуется особых навыков </p>
+                        <p class="advantages--p">Весь процесс займёт у Вас не более 5 минут.</p>
+
+                    </div>
+                    <div class="advantages advantages__left wow bounceInLeft">
+                        <h6 class="advantages--h6"><strong>НАДЕЖНО И БЕЗОПАСНО</strong></h6>
+                        <div class="orLineBlock">
+                            <div class="orLine"></div>
+                        </div>
+
+                        <p class="advantages--p">Вода и электричество надежно </p>
+                        <p class="advantages--p">изолированы друг от друга.</p>
+                        <p class="advantages--p">Высокоэффективный сетчатый фильтр</p>
+                        <p class="advantages--p">защищает от гидроудара.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="imgBlock">
+                        <img class="mt-5 advantages--img" src="img/del-crane.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="advantages advantages__right wow bounceInRight">
+                        <h6 class="advantages--h6"><strong>ГАРАНТИЯ КАЧЕСТВА</strong></h6>
+                        <div class="orLineBlock">
+                            <div class="orLine"></div>
+                        </div>
+
+                        <p class="advantages--p">Кран-водонагреватель Делимано </p>
+                        <p class="advantages--p">соответствует всем </p>
+                        <p class="advantages--p">международным сертификатам качества. </p>
+                        <p class="advantages--p">Все модели прошли обязательную </p>
+                        <p class="advantages--p">сертификацию.</p>
+                    </div>
+                    <div class="advantages advantages__right">
+                        <h6 class="advantages--h6"><strong>ДВА В ОДНОМ</strong></h6>
+                        <div class="orLineBlock">
+                            <div class="orLine"></div>
+                        </div>
+
+                        <p class="advantages--p">Фактически в одном изделии продукта:</p>
+                        <p class="advantages--p">это смеситель и проточный нагреватель.</p>
+
+                    </div>
+                    <div class="advantages advantages__right wow bounceInRight">
+                        <h6 class="advantages--h6"><strong>НАГРЕВ ДО t +60</strong></h6>
+                        <div class="orLineBlock">
+                            <div class="orLine"></div>
+                        </div>
+
+                        <p class="advantages--p">При данной t уменьшается риск </p>
+                        <p class="advantages--p">образования накипи и ожогов тела.</p>
+                        <p class="advantages--p">Есть регулировка</p>
+                        <p class="advantages--p">температуры нагрева.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <p class="denger-text wow zoomIn"><u>ВНИМАНИЕ!</u>ОСТЕРЕГАЙТЕСЬ ДЕШЁВЫХ АНАЛОГОВ И НЕДОБРОСОВЕСТНЫХ ПРОДАВЦОВ
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="videoLine wow bounce">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10 ml-1 mr-1 videoLine--pBlock">
+                        <p class="videoLine--p"> Не хотите читать?</p>
+                        <p class="videoLine--p">Посмотрите это 3-х минутное видео!</p>
+                    </div>
+                    <div class="col-2 ml-1 mr-1 mt-2 mb-2 videoLine--imgBlock">
+                        <img src="img/strelki.png">
+                    </div>
+                    <div class="col-lg-3 col-md-12 mt-3 mb-3">
+                        <div class="videoLine--monitor">
+                            <div id="player"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </secrion>
+    <section class="section">
+        <div class="container pt-5">
+            <div class="main-6-container wow zoomIn" data-wow-duration="2s">
+                <p>Вопросы и ответы</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col md-12">
+                            <div class="faq">
+                                <div class="faq-red">Действительно ли использование"крана-водонагревателя" экономичнее
+                                    альтернативных систем водонагрева?
+                                    <div class="pipa-right"></div>
+                                </div>
+                                <div class="faq-black">Да, это так. Кран потребляет электроэнергию только тогда, когда
+                                    Вам требуется горячая вода, а накопительные системы потребляют почти постоянно. Так
+                                    же 1,5 кВт – это максимальная мощность при максимальной температуре, а у Вас есть
+                                    возможность регулирования температуры. Соответственно, потребляемая мощность будет
+                                    меньше.
+                                </div>
+                                <div class="faq-red">Какие требования по давлению в системе водоподачи? Какое
+                                    минимальное давление воды должно быть, чтобы нагрев не отключался?
+                                    <div class="pipa-right"></div>
+                                </div>
+                                <div class="faq-black">Минимальное давление воды 0,5 атмосфер</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col md-12">
+                            <div class="faq">
+                                <div class="faq-red">Какой срок ДОСТАВКИ ПО УКРАИНЕ?
+                                    <div class="pipa-left"></div>
+                                </div>
+                                <div class="faq-black">Отправка товара осуществляется на следующий день после заказа.
+                                    Предварительно мы проверяем товар на работоспособность.Все краны имеют заводскую
+                                    упаковку.<br></div>
+                                <div class="faq-red">Как обстоят дела с напором воды при большом давлении?
+                                    <div class="pipa-left"></div>
+                                </div>
+                                <div class="faq-black">У крана имеется распылитель, который при большом давлении
+                                    перекрывает большие отверстия и вода начинает идти через более мелкие. Поэтому, при
+                                    использовании Вы не заметите изменения напора ни визуально, ни по ощущениям.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </section>
+    <section class="section" id="testimonials">
+        <div class="testimonials">
+            <div class="container pt-5">
+                <h3 class="testimonials--h3 wow zoomIn" data-wow-duration="2s">Отзывы наших клиентов</h3>
+                <div class="row pt-5">
+                    <div class="col-12 testimonials--testimonialContainer mt-3 mb-3 wow bounceInLeft">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-12 testimonial--imgBlock">
+                                <img src="img/test-1.jpg" class="testimonials--testimonial--img">
+                                <p class="testimonial--p testimonial--p__r testimonial--name">Карина</p>
+                            </div>
+                            <div class="col-9 testimonial--pContainer">
+                                <p class="testimonial--p testimonial--p__r">Я рада что нашла этого продавца и этот кран!
+                                    сказать что он классный- ничего не сказать - он огонь! Украшает кухню и греет воду
+                                    очень быстро! Я в восторге как и вся моя семья!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 testimonials--testimonialContainer mt-3 mb-3 wow bounceInRight">
+                        <div class="row">
+
+                            <div class="col-9 testimonial--pContainer">
+                                <p class="testimonial--p testimonial--p__l">Кран супер, сам установил и пашет на ура без
+                                    проблем. Температура греет, на мелком напоре очень горячая вода, рукой нельзя
+                                    держать, бывает за 60 градусов. При среднем 45, при полном 35. Вообщем просто супер.
+                                    Удобно и экономно. Спасибо вам за быструю и удобную доставку.</p>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 testimonial--imgBlock">
+                                <img src="img/test-2.jpg" class="testimonials--testimonial--img">
+                                <p class="testimonial--p testimonial--p__l testimonial--name">Анатолий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 testimonials--testimonialContainer mt-3 mb-3 wow bounceInLeft">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-12 testimonial--imgBlock">
+                                <img src="img/test-3.jpg" class="testimonials--testimonial--img">
+                                <p class="testimonial--p testimonial--p__r testimonial--name">Наташа</p>
+                            </div>
+                            <div class="col-9 testimonial--pContainer">
+                                <p class="testimonial--p testimonial--p__r">Купляла ще в жовтні, пройшло вже багато часу
+                                    щоб зрозуміти що кран гарно працює, немає ніяких нарікань! Вже намучалася з
+                                    відсутністю гарячої води. Жахливо! Зараз розумію, що це було вірне рішення - купити
+                                    цей кран!
+                                    Встановили десь за годину. Все з інструкцією і є також відео! Дякую за якісний товар
+                                    і швидку доставку!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 testimonials--testimonialContainer mt-3 mb-5 wow bounceInRight">
+                        <div class="row">
+
+                            <div class="col-9 testimonial--pContainer">
+                                <p class="testimonial--p testimonial--p__l">водонагреватель приобрели в целях экономии,
+                                    так
+                                    как расход газа и воды был большой, особенно зимой. Воду нагревает очень быстро в
+                                    течение нескольких секунд. Выглядит стильно, намного лучше обычного крана. Для
+                                    установки крана не требуется сложного монтажа. По сравнению с бойлерами занимает
+                                    намного меньше места. Экономит электроэнергию по сравнению с бойлерами за счет
+                                    рассеивателя на кране. Покупкой очень довольны, незаменимая вещь в хозяйстве
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 testimonial--imgBlock">
+                                <img src="img/test-4.jpg" class="testimonials--testimonial--img">
+                                <p class="testimonial--p testimonial--p__l testimonial--name">Вадим</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section wus">
+        <h3 class="section--h3Black text-center pt-5 wow zoomIn" data-wow-duration="2s">Почему нужно выбрать именно наш магазин?</h3>
+        <div class="container-fluid pt-3 mt-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-12 rightLine__b">
+                    <div class="container-fluid  wow bounceInLeft">
+                        <div class="row justify-content-end mt-5">
+                            <div class="col-9">
+                                <div class="advantages advantages__left advantages__us">
+                                    <h6 class="advantages--h6__us advantages--h6__us__left"><strong>Сервисное
+                                        обслуживание:</strong></h6>
+                                    <p class="advantages--p__us advantages--p__us__left">У нас есть собственный
+                                        сервисный центр,</p>
+                                    <p class="advantages--p__us advantages--p__us__left">поэтому обслуживание мы
+                                        можем</p>
+                                    <p class="advantages--p__us advantages--p__us__left">производить самостоятельно!</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3 whyus--imgBlock">
+                                <img class="whyus--img" src="img/whyus-1.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end mt-5 mb-4 wow bounceInLeft">
+                        <div class="col-9 pt-5">
+                            <div class="advantages advantages__left advantages__us ">
+                                <h6 class="advantages--h6__us advantages--h6__us__left "><strong>100% гарантия:</strong>
+                                </h6>
+                                <p class="advantages--p__us advantages--p__us__left">Перед отправкой товары проходят
+                                    100% </p>
+                                <p class="advantages--p__us advantages--p__us__left">проверку на стенде.</p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-3 whyus--imgBlock pt-5">
+                            <img class="whyus--img" src="img/quality.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="container-fluid  wow bounceInRight">
+                        <div class="row justify-content-end mt-4">
+                            <div class="col-3 whyus--imgBlock">
+                                <img class="whyus--img" src="img/whyus-2.png">
+                            </div>
+                            <div class="col-9">
+                                <div class="advantages advantages__left advantages__us ">
+                                    <h6 class="advantages--h6__us"><strong>Быстрая доставка:</strong></h6>
+                                    <p class="advantages--p__us">Мы отправляем Ваш товар в день заказа и</p>
+                                    <p class="advantages--p__us">не заставляем ждать наших покупателей.</p>
+                                    <p class="advantages--p__us">У нас всего один выходной в неделю,</p>
+                                    <p class="advantages--p__us">но и в него мы с радостью</p>
+                                    <p class="advantages--p__us">вас проконсультируем!</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row justify-content-end mt-2 mb-5 wow bounceInRight">
+                        <div class="col-3 whyus--imgBlock">
+                            <img class="whyus--img" src="img/whyus-4.png">
+                        </div>
+                        <div class="col-9">
+                            <div class="advantages advantages__us ">
+                                <h6 class="advantages--h6__us"><strong>Лучшие цены:</strong></h6>
+                                <p class="advantages--p__us">Мы являемся официальными дилерами </p>
+                                <p class="advantages--p__us">производителя и импортируем продукцию</p>
+                                <p class="advantages--p__us">напрямую без посредников. Поэтому наши цены одни </p>
+                                <p class="advantages--p__us">из самых низких в Украине!</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="section--h3Or text-center pt-5 wow slideInUp">ЗАКАЖИ КРАН DELIMANO ПРЯМО СЕЙЧАС И ПОЛУЧИ СКИДКУ 50%!</h3>
+
+        <div class="container wow slideInUp">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <div class="headform--container--form mt-5">
+                        <div class="phoneForm mt-5">
+                            <p class="phoneForm--text text-center mt-5">Закажите прямо сейчас!</p>
+                            <form action="sendmail.php" data-show=".thank" data-them="Краны Delimano">
+                                <div class="phoneForm--in"><input type="text" name="name" value=""
+                                                                  placeholder="Ваше имя"
+                                                                  class="phoneForm--name " class="phoneForm--name "
+                                                                  data-name="Имя: " required></div>
+                                <div class="phoneForm--in"><input type="text" name="phone" value=""
+                                                                  placeholder="Ваш телефон"
+                                                                  class="phoneForm--phone "
+                                                                  data-name="Номер телефона: " required></div>
+                                <div class="phoneForm--in">
+                                    <button class="btn phoneForm--btn" value="Submit">Оставить заявку</button>
+                                </div>
+                            </form>
+                            <div class="thank" style="display: none">Ваша заявка отправлена!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="imgBlock">
+                        <img src="img/kran_zakaz.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="imgBlock warning"><img src="img/warning.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="parallax-window catalog pb-5" data-parallax="scroll" data-image-src="img/howwework.jpg">
+            <div class="container pt-5">
+                <h3 class="hww--h3 mt-5 wow zoomIn" data-wow-duration="2s">Как мы работаем?</h3>
+                <div class="row justify-content-center pt-4">
+                    <div class="col-lg-4 col-md-6 col-sm 12 p-2 wow slideInUp"><img src="img/1.png" alt=""></div>
+                    <div class="col-lg-4 col-md-6 col-sm 12 p-2 wow slideInUp"><img src="img/2.png" alt=""></div>
+                    <div class="col-lg-4 col-md-6 col-sm 12 p-2 wow slideInUp"><img src="img/3.png" alt=""></div>
+                    <div class="col-lg-4 col-md-6 col-sm 12 p-2 wow slideInUp"><img src="img/4.png" alt=""></div>
+                    <div class="col-lg-4 col-md-6 col-sm 12 p-2 wow slideInUp"><img src="img/5.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-12 mt-1"><a class="navbar-brand footer--brandB" href="#">
+                <img src="img/Delimano-delimano.png" width="170" height="50" class="d-inline-block align-top footer--img" alt="">
+
+            </a></div>
+            <div class="col-lg-4 col-md-12  mt-1 telBlock">
+                <span class="ml-md-5 mr-md-5 text-white telBlock--tel">+(380) 938 150 845</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</footer>
 <!--************************************************Scripts*****************************************************************-->
 <!--***************************************************************************************************************************-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
-<!--<script src="js/jquery.validate.js"></script>-->
 <script src="js/jquery.sendFormLP.js"></script>
-
-
 <script src="js/parallax.min.js"></script>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

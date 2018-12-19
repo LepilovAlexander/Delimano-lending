@@ -17,6 +17,9 @@
       right: 1.8rem;
     }
   }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock__forKey .catalog--productContainer--costBlock--right__forKey button.catalog--productContainer--costBlock--right--btn {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -64,7 +67,15 @@
       right: 7.8rem;
     }
   }
-
+  .catalog .catalog--productContainer .catalog--productContainer--ul:after {
+    display: none;
+  }
+  .wus .section--h3Black {
+    &:after {
+      content: '';
+      display: none;
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
   .prise {
@@ -146,10 +157,7 @@
       justify-content: center;
     }
   }
-  .catalog .catalog--productContainer .catalog--productContainer--ul:after {
-    top: 56rem;
-    background-size: 80%;
-  }
+
   .section {
     .section--h3Or {
       font-size: $fz*2;

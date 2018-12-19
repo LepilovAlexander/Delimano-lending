@@ -1,0 +1,23 @@
+.footer {
+  background-color: #8cd000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .telBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .telBlock--tel {
+      display: block;
+      font-size: $fz*2;
+    }
+  }
+  .footer--brandB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer--img {
+      display: block;
+    }
+  }
+}
