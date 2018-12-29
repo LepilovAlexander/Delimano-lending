@@ -53,11 +53,9 @@
   }
 
   .aboutCranDelimo--body {
-    width: 100%;
+    width: 90%;
 
     .aboutCranDelimo--body--table {
-      width: 100%;
-
       .aboutCranDelimo--body--table--head__left {
         border-left: 2px solid #666;
         border-right: 2px solid #666;
@@ -143,6 +141,7 @@
     font-weight: 700;
   }
   .catalog--h3__super {
+    max-width: 90%;
     margin-top: 2rem;
     color: rgb(238, 29, 36);
   }
@@ -249,6 +248,35 @@
         }
       }
     }
+    .qualityB {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 3.5rem;
+      .quality {
+        width: 30%;
+        height: 30%;
+      }
+    }
+    .catalog--productContainer--costBlock--right--btn__forKey {
+      background: rgb(226, 84, 64);
+      border-right: 5px;
+      border-style: solid;
+      border-top-width: 1px;
+      border-bottom-width: 3px;
+      border-left-width: 1px;
+      border-right-width: 1px;
+      border-color: rgb(202, 51, 30);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 20px;
+      max-height: 3rem;
+      color: rgb(255, 255, 255);
+      font-family: "Open Sans";
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+      margin-top: 1rem;
+    }
     .catalog--productContainer--costBlock__forKey {
       flex-wrap: wrap;
       flex-direction: column;
@@ -256,54 +284,25 @@
       justify-content: flex-end;
       width: 100%;
       padding-top: 1rem;
-      .qualityB {
-        display: flex;
-        justify-content: flex-end;
-        .quality {
-          width: 30%;
-          height: 30%;
-        }
-      }
-
-      .catalog--productContainer--costBlock--left {
-        justify-content: flex-end;
-        margin-right: 1rem;
-        .catalog--productContainer--costBlock--left--p__red__forKey {
-          text-align: right;
-          padding-right: 0;
-        }
-      }
-      .catalog--productContainer--costBlock--left--p__forKey {
-        text-align: right;
-      }
-
-      .catalog--productContainer--costBlock--right__forKey {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 1rem;
-        .catalog--productContainer--costBlock--right--btn__forKey {
-          background: rgb(226, 84, 64);
-          border-right: 5px;
-          border-style: solid;
-          border-top-width: 1px;
-          border-bottom-width: 3px;
-          border-left-width: 1px;
-          border-right-width: 1px;
-          border-color: rgb(202, 51, 30);
-          padding-top: 5px;
-          padding-bottom: 5px;
-          padding-left: 12px;
-          padding-right: 12px;
-          font-size: 20px;
-          max-height: 3rem;
-          color: rgb(255, 255, 255);
-          font-family: "Open Sans";
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-          margin-top: 1rem;
-        }
-      }
 
     }
+  }
+  .catalog--productContainer--costBlock--left--p__forKey {
+    font-size: $fz*2.3;
+    color: #000;
+    text-align: right;
+    padding-right: 2.5rem;
+  }
+  .btnB {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3.5rem;
+  }
+  .catalog--productContainer--costBlock--left--p__red__forKey {
+    font-size: $fz*2.3;
+    color: #FF0000;
+    text-align: right;
+    padding-right: 2.5rem;
   }
   .key--p {
     font-weight: 500;
@@ -379,7 +378,13 @@
     height: 400px;
   }
 }
+.share {
+  text-align: center;
+  font-size: $fz*2;
+  color: #ee1d24;
+  font-weight: 700;
 
+}
 .denger-text {
   font-size: $fz*2;
   color: #ee1d24;
@@ -481,8 +486,9 @@
   .testimonial--p {
     display: block;
     font-family: $ff;
-    font-size: $fz*1.3;
-    font-weight: 100;
+    font-size: $fz*1.5;
+    color: #000;
+    font-weight: 500;
     padding: 1rem;
   }
   .testimonial--p__l {
@@ -532,18 +538,19 @@
 }
 .advantages--h6__us {
   font-size: $fz*1.5;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 .advantages--p__us {
-  margin-bottom: 0.3rem;
-  font-size: $fz*1.2;
+  margin-bottom: 0;
+  font-size: $fz*1.1;
+  font-weight: 700;
 }
 .whyus--imgBlock {
   display: flex;
   justify-content: center;
   align-items: center;
   .whyus--img {
-    width: 100%;
+    width: 80%;
 
   }
 }
@@ -557,10 +564,9 @@
 
 .main-6-container p {
   text-align: center;
-  font-size: 30px;
+  font-size: $fz*2.5;
   padding-bottom: 60px
 }
-
 .faq {
   font-size: 15px;
   line-height: 20px;
@@ -575,11 +581,14 @@
   text-transform: uppercase;
   border: 1px solid #CF2119;
   border-radius: 5px;
-  position: relative
+  position: relative;
+  font-size: $fz*1.5;
 }
 
 .faq-black {
-  padding: 10px 10px 30px 10px
+  padding: 10px 10px 30px 10px;
+  font-size: $fz*1.3;
+  text-align: right;
 }
 
 .pipa-right,
@@ -601,6 +610,11 @@
   z-index: 6;
   .warning {
     padding-bottom: 5rem;
+    padding-top: 8rem;
+    img{
+      width: 70%;
+      height: 100%;
+    }
   }
   &:after {
     content: "";
@@ -624,4 +638,31 @@
   font-family: $os;
   text-align: center;
   font-weight: 100;
+}
+.box-s {
+  box-shadow: 0 0 8px #000000;
+  padding-top: 0;
+  .phoneForm--btn {
+    margin-bottom: 3rem;
+  }
+  .phoneForm--text {
+    background: #8cd000;
+    margin-bottom: 3rem;
+    color: $c;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.videoLine iframe#player {
+  margin: 1rem 0.2rem;
+  width: 95%;
+  height: 12rem;
+}
+.hww--imgBlock {
+  img{
+    width: 100%;
+  }
+}
+button.navbar-toggler {
+  padding: 1.25rem 1.75rem;
 }

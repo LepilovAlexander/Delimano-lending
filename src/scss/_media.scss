@@ -1,3 +1,19 @@
+@-moz-document url-prefix() {
+  .prise {
+    top: 21rem;
+    right: 16rem;
+  }
+  .timer {
+    margin-top: -12rem;
+  }
+  .imgBlock {
+    .prise {
+      top: 25rem;
+      right: 7rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .headform--container {
     .crane {
@@ -20,11 +36,216 @@
   .catalog .catalog--productContainer .catalog--productContainer--costBlock__forKey .catalog--productContainer--costBlock--right__forKey button.catalog--productContainer--costBlock--right--btn {
     margin-top: 0;
   }
+  .videoLine .videoLine--monitor {
+    background-image: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+  a.navbar-brand .navbar--img {
+    width: 300px;
+    height: 80px;
+
+  }
+  ul.navbar-nav li.nav-item a.nav-link {
+    font-size: $fz*2.5;
+  }
+  .headform--container .headform--container--flag .headform--container--flag--text {
+    font-size: $fz*2.5;
+  }
+  header nav.navbar .telNum {
+    font-size: $fz*2;
+  }
+  .headform--container .headform--container--flag .headform--container--flag--text {
+    font-size: $fz*3;
+  }
+  .phoneForm .phoneForm--text {
+    font-size: $fz*3;
+  }
+  .prise {
+    top: 34rem;
+  }
+  .timer {
+    margin-top: -8rem;
+  }
+  .aboutCranDelimo .rightLine {
+    border-right: none;
+  }
+  .aboutCranDelimo .aboutCranDelimo--body .aboutCranDelimo--body--table td {
+    padding: 5px;
+    text-align: center;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--left .catalog--productContainer--costBlock--left--p {
+    font-size: 38px;
+    margin-bottom: 0;
+    s {
+      font-size: 40px;
+    }
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--left .catalog--productContainer--costBlock--left--p__red {
+    font-size: 50px;
+  }
+  .headform--container .headform--container--form .phoneForm .phoneForm--in input,
+  .headform--container--form .phoneForm .phoneForm--in input
+  {
+    font-size: $fz*2.5;
+    padding: 2rem;
+    padding-left: 3rem;
+  }
+  .phoneForm .phoneForm--name {
+    background: url(../img/input.png) no-repeat 0 -25px, -webkit-gradient(linear, left bottom, left top, color-stop(88.95%, #fff), to(#cfd1d2));
+    background: url(../img/input.png) no-repeat 0 -25px, -webkit-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+    background: url(../img/input.png) no-repeat 0 -25px, -o-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+    background: url(../img/input.png) no-repeat 0 -37px, linear-gradient(0deg, #fff 104.95%, #cfd1d2 106%);
+    background-size: 3rem;
+  }
+  .phoneForm .phoneForm--phone {
+    background: url(../img/input.png) no-repeat 0 -55px, -webkit-gradient(linear, left bottom, left top, color-stop(88.95%, #fff), to(#cfd1d2));
+    background: url(../img/input.png) no-repeat 0 -55px, -webkit-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+    background: url(../img/input.png) no-repeat 0 -55px, -o-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+    background: url(../img/input.png) no-repeat 0 -86px, linear-gradient(0deg, #fff 88.95%, #cfd1d2 100%);
+    background-size: 3rem;
+  }
+  div.modal div.modal-dialog {
+
+    max-width: 100%;
+    .phoneForm .phoneForm--in input {
+      font-size: $fz*2.5;
+      padding: 2rem;
+      padding-left: 3rem;
+    }
+    .phoneForm .phoneForm--in .phoneForm--name {
+      background: url(../img/input.png) no-repeat 0 -25px, -webkit-gradient(linear, left bottom, left top, color-stop(88.95%, #fff), to(#cfd1d2));
+      background: url(../img/input.png) no-repeat 0 -25px, -webkit-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+      background: url(../img/input.png) no-repeat 0 -25px, -o-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+      background: url(../img/input.png) no-repeat 0 -37px, linear-gradient(0deg, #fff 104.95%, #cfd1d2 106%);
+      background-size: 3rem;
+    }
+    .phoneForm .phoneForm--in .phoneForm--phone {
+      background: url(../img/input.png) no-repeat 0 -55px, -webkit-gradient(linear, left bottom, left top, color-stop(88.95%, #fff), to(#cfd1d2));
+      background: url(../img/input.png) no-repeat 0 -55px, -webkit-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+      background: url(../img/input.png) no-repeat 0 -55px, -o-linear-gradient(bottom, #fff 88.95%, #cfd1d2 100%);
+      background: url(../img/input.png) no-repeat 0 -86px, linear-gradient(0deg, #fff 88.95%, #cfd1d2 100%);
+      background-size: 3rem;
+    }
+    .modal-title {
+      padding-top: 1.5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+
+    }
+    .close {
+      font-size: 5.5rem;
+    }
+  }
+  .phoneForm .phoneForm--btn {
+    font-size: $fz*2.5;
+  }
+  .timer p {
+    font-size: $fz*2.5;
+
+  }
+  .aboutCranDelimo .aboutCranDelimo--head .aboutCranDelimo--head--h4 {
+    font-size: $fz*3;
+  }
+  .aboutCranDelimo .aboutCranDelimo--body .aboutCranDelimo--body--table {
+    font-size: $fz*2.5;
+  }
+  .aboutCranDelimo .aboutCranDelimo--text .aboutCranDelimo--text--p {
+    font-size: $fz*2.5;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--h5 {
+    font-size: $fz*3;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--p {
+    font-size: $fz*2.7;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--ul {
+    font-size: $fz*2.5;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock {
+    font-size: $fz*3;
+  }
+  .catalog .key--p {
+    font-size: $fz*2.5;
+  }
+  .share {
+    font-size: $fz*3;
+  }
+  .section .section--h3Or__wl {
+    font-size: $fz*3.2;
+  }
+  .advantages__left .advantages--h6,
+  .advantages__right .advantages--h6 {
+    font-size: $fz*3;
+  }
+  .advantages__left .advantages--p,
+  .advantages__right .advantages--p {
+    font-size: $fz*2.5;
+  }
+  .imgBlock .advantages--img {
+    height: 700px;
+  }
+  .denger-text {
+    font-size: $fz*3;
+  }
+  .videoLine .videoLine--pBlock .videoLine--p {
+    font-size: $fz*3.3;
+  }
+  .main-6-container p {
+    font-size: $fz*3.3;
+  }
+  .faq-red,
+  .faq-black {
+    font-size: $fz*2.5;
+    line-height: 3rem;
+  }
+
+  .testimonials .testimonial--imgBlock .testimonials--testimonial--img {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+  }
+  .testimonials .testimonial--p {
+    font-size: $fz*2.5;
+    text-align: center;
+  }
+  .section--h3Black {
+    font-size: $fz*3.3;
+  }
+  .advantages--h6__us {
+    font-size: $fz*2.7;
+  }
+  .advantages--p__us {
+    font-size: $fz*2.4;
+  }
+  .section .section--h3Or {
+    font-size: $fz*3.3;
+  }
+  .box-s .phoneForm--text {
+    font-size: $fz*3;
+  }
+  .phoneForm .phoneForm--name,
+  .phoneForm .phoneForm--phone {
+    font-size: $fz*2.4;
+  }
+  .footer .telBlock .telBlock--tel {
+    font-size: $fz*3.3;
+  }
+  .testimonials .testimonial--name {
+    font-size: $fz*3;
+    font-weight: 700;
+  }
+  .aboutCranDelimo:after {
+    display: none;
+  }
   header nav.bg-green {
     background-color: #8cd000;
+  }
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right .catalog--productContainer--costBlock--right--btn,
+  .catalog .catalog--productContainer .catalog--productContainer--costBlock--right--btn__forKey {
+    font-size: $fz*3;
+    max-height: 5.5rem;
   }
   .headform--container .headform--container--form .phoneForm {
     width: 100%;
@@ -51,12 +272,12 @@
     }
   }
   .catalog .catalog--productContainer .catalog--productContainer--ul:after {
-    background-size:50%;
-    top:28rem;
-    left:20rem;
-    width:40%;
-    height:50%;
-    z-index:10;
+    background-size: 50%;
+    top: 28rem;
+    left: 20rem;
+    width: 40%;
+    height: 50%;
+    z-index: 10;
   }
   .prise {
 
@@ -76,8 +297,36 @@
       display: none;
     }
   }
+  .videoLine .videoLine--monitor {
+    min-height: 36rem;
+  }
+  .videoLine iframe#player {
+    height: 30rem;
+  }
+  .videoLine .videoLine--monitor {
+    background-image: none;
+  }
+  .testimonials .testimonial--p {
+    text-align: left;
+  }
+  .revers {
+    flex-direction: column-reverse;
+  }
+  .wus .warning img {
+    width: 90%;
+    padding-top: 2rem;
+  }
 }
+
 @media only screen and (max-width: 768px) {
+  .crane img {
+    width: 100%;
+    height: 25rem;
+  }
+  .phoneForm .phoneForm--text {
+    font-size: $fz*2.5;
+  }
+
   .prise {
 
     &:before {
@@ -87,60 +336,64 @@
       right: 3.8rem;
     }
   }
-}
-@media only screen and (max-width: 555px) {
-  .green-block {
-
-    min-height: 130px;
-
-  }
-  .headform--container .hit {
-    right: 150px;
-  }
-  .catalog .catalog--productContainer .catalog--productContainer--ul:after {
-    left:10rem;
-  }
-
-  .catalog .catalog--productContainer .catalog--productContainer--costBlock {
-    flex-wrap: wrap;
-    justify-content: center;
-    white-space: pre-wrap;
-    .catalog--productContainer--costBlock--right--btn {
-      margin-bottom: 2rem;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right {
-    margin-left: 0;
-  }
-  .catalog .catalog--productContainer .catalog--productContainer--costBlock {
-    white-space: pre-wrap;
-  }
-  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--left .catalog--productContainer--costBlock--left--p__red,
-  .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right .catalog--productContainer--costBlock--right--btn
-  {
-    margin-top: -11rem;
-  }
   .prise {
     flex-direction: column;
-    top: 24rem;
-    right: 0rem;
+    top: 9rem;
+    right: 0;
     justify-content: center;
   }
   .prise {
     text-shadow: 1px 1px 1px #000;
     .prise--img {
-      display: none;
+      width: 88%;
+      right: 4rem;
+
     }
     &:before {
-      right: 13.2rem;
-      top: 8rem;
+      right: 12.2rem;
+      top: 7rem;
     }
     &:after {
       right: 9.8rem;
-      top: 9.8rem;
+      top: 8.8rem;
     }
+
+  }
+  @media only screen and (max-width: 555px) {
+
+    .green-block {
+
+      min-height: 130px;
+
+    }
+    .headform--container .hit {
+      right: 150px;
+    }
+    .catalog .catalog--productContainer .catalog--productContainer--ul:after {
+      left: 10rem;
+    }
+
+    .catalog .catalog--productContainer .catalog--productContainer--costBlock {
+      flex-wrap: wrap;
+      justify-content: center;
+      white-space: pre-wrap;
+      .catalog--productContainer--costBlock--right--btn {
+        margin-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right {
+      margin-left: 0;
+    }
+    .catalog .catalog--productContainer .catalog--productContainer--costBlock {
+      white-space: pre-wrap;
+    }
+    .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--left .catalog--productContainer--costBlock--left--p__red,
+    .catalog .catalog--productContainer .catalog--productContainer--costBlock .catalog--productContainer--costBlock--right .catalog--productContainer--costBlock--right--btn {
+      margin-top: -11rem;
+    }
+
   }
 
 }
@@ -163,7 +416,6 @@
       font-size: $fz*2;
     }
   }
-
 
 }
 
