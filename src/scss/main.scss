@@ -14,6 +14,9 @@ $os: "Open Sans"; // h3 font (google fonts)
 .bg-green{
   background-color: #8cd0008f;
 }
+section.section {
+  overflow: hidden;
+}
 //Import files
 @import "_style-start.scss";
 @import "_animations.scss";
